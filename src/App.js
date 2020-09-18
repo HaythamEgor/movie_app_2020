@@ -6,14 +6,22 @@ function Food({ fav }) {
   );
 }
 
+const foodLink = [
+  {
+    name: '김치',
+  },
+  {
+    name: '햄버거',
+  },
+  {
+    name: '피자',
+  }
+];
+
 function App() {
     return (
     <div>
       <h1>Hello!!</h1>
-      <Food fav="김치" />
-      <Food fav="스파게티" />
-      <Food fav="쭈꾸미" />
-      <Food fav="라면" />
     </div>
     );
 }
