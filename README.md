@@ -3,8 +3,15 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020
 
-## 10월 7일
+## 10월 16일
+1. 로딩 현상 구현
+2. axios 사용 연습
+3. get함수를 이용하여 호출하는법을 익힘
+4. 자바스크립트에서 시간이 필요하다는 것을 알리기 위해선 async, await 키워드가 필요함
+5. 자바스크립트에게 시간이 필요하다는 것을 알리려면 async를 사용하고 get함수에는 앞에 await를 붙인다
 
+
+## 10월 7일
 1. Prop-type는 컴포넌트가 전달받은 props가 원하는 값인지 확인해주는 역할
 2. isRequired는 필요하다는 뜻으로 OOO에는 OOO이 반드시 필요하다는 뜻
     └name: PropTypes.string.isRequired => name에는 string자료형이 반드시 필요
