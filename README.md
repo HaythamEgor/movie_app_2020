@@ -3,12 +3,26 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020
 
+## 10월 30일
+1. ES6의 구조 분해 할당 사용방법을 익힘
+    └ex) const {data: {data: {movies}}} = await
+2. key와 key값이 같을경우엔 둘다 써주지 않아도 됨
+    └ex) this.setState({movies: movies}) == this.setState({movies})
+
 ## 10월 16일
-1. 로딩 현상 구현
-2. axios 사용 연습
-3. get함수를 이용하여 호출하는법을 익힘
-4. 자바스크립트에서 시간이 필요하다는 것을 알리기 위해선 async, await 키워드가 필요함
-5. 자바스크립트에게 시간이 필요하다는 것을 알리려면 async를 사용하고 get함수에는 앞에 await를 붙인다
+isLoading state 특징
+앱이 실행(mount)되는 초기에는 무조건 로딩 상태이기 때문에 값은 true
+삼항연산자로 로딩 상태를 알려주는 문장을 만듬
+강제로 false로 바꿔서 로딩 현상을 구현
+
+API 특징
+특정 주소를 입력하면 그 주소에 맞는 결과를 보내줌
+조건도 붙일 수 있도록 제공
+API를 사용하려면 axios를 설치 후 import해야함
+이때, componentDidUnmount() 함수에서 axios.get() 함수의 인자에 URL을 전달하여 API를 호출
+async, await
+자바스크립트에서 시간이 필요하다는 것을 알리기 위해서 사용되는 키워드
+시간이 필요하다는 것을 알리려면 async를 () 앞에 붙이고, 실제 시간이 필요한 대상인 axios.get() 함수에는 await를 붙임
 
 
 ## 10월 7일
