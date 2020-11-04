@@ -5,45 +5,38 @@ import Movie from './Movie';
 class App extends React.Component {
   state = {
     isLoading: true,
-    movies: []
+    movie: []
   };
-  
-  // https://yts.mx/api#list_movies
   getMovies = async () => {
     const {
       data: {
-        data: {movies}
-      }
+        data: {movies},
+      },
     } = await axios.get('https://yts-proxy.now.sh/list_movies.json?sort_by=rating');
-    this.setState({movies, isLoading:false});
-    console.log(movies);
-  }
-
+    this.setState({ movies, isLoading: false });
+  };
   componentDidMount() {
-    // 영화 데이터 로딩
     this.getMovies();
   }
-
   render() {
-    const {isLoading, movies} = this.state;
+    const { isLoading, movies } = this.state;
     return (
       <div>
-        {isLoading ? 'Loading...' 
-        : movies.map((movie) => {
-          return (
-            <Movie
-              key={movie.id}
-              id={movie.id}
-              year={movie.year}
-              title={movie.title}
-              summary={movie.summary}
-              poster={movie.medium_cover_image}
-            />
-          );
-        })}
+        { isLoading 
+          ? 'Loading...' 
+          : movies.map( (movie) => {
+            return (
+              <Movie
+                key={movie.id}
+                id={movie.id} 
+                year={movie.year} 
+                title={movie.title} 
+                summary={movie.summary} 
+                poster={movie.medium_cover_image} 
+              />);
+          })}
       </div>
     );
-  } 
+  }
 }
-
 export default App;
