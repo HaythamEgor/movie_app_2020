@@ -3,6 +3,9 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020
 
+## 11월 6일
+1. 
+
 ## 10월 30일
 1. ES6의 구조 분해 할당 사용방법을 익힘
     └ex) const {data: {data: {movies}}} = await
