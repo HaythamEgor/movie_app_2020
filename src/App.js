@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import Movie from './Movie';
 import './App.css';
-
 class App extends React.Component {
   state = {
     isLoading: true,
@@ -24,10 +23,10 @@ class App extends React.Component {
     return (
       <section className="container">
         { isLoading ? (
-        <div className="loader"><span className="loader__text">'Loading...'</span></div>
+        <div className="loader"><span class="loder__text">'Loading...'</span></div>
         )
           : (
-            <div className="movie">
+            <div class="movie">
             {movies.map( (movie) => {
             return (
               <Movie
