@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Movie.css';
 
-import './movie.css';
 function Movie({id, year, title, summary, poster,genres }) {
   return (
     <div className="movie">
     <img src ={poster} alt ={title} title={title} />
 
     <div className="movie-data">    
-      <h3 className="movie-title" style={{backgroundColor: "red"}} >{title}</h3>
+      <h3 className="movie-title">{title}</h3>
       <h5 className="movie-year">{year}</h5>
       <ul className="movie-genres"></ul>
       <ul>
@@ -18,7 +18,7 @@ function Movie({id, year, title, summary, poster,genres }) {
         )}
 
       </ul>
-      <p className ="movie-summary">{summary}</p>
+      <p className ="movie-summary">{summary.slice(0, 180)}...</p>
       <p className ="movie-genres">{genres}</p>
   </div>
   </div>

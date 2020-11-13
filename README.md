@@ -3,6 +3,13 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020
 
+## 11월 13일
+1. slice함수를 이용하여 글자수 제한
+    └ex) .slice(0, 180)
+2. 라우터는 사용자가 입력한 URL을 통해 특정 컴포넌트를 불러주는 역할을 함
+3. Route에는 2가지 props를 전달할 수 있음, 하나는 URL을 위한 path props고, 또 하나
+    는 URL에 맞는 컴포넌트를 불러 주기 위한 component props
+
 ## 11월 6일
 1. 특정 타입의 행렬인 prototypes.arrayof 를 사용
 2. map 함수를 사용하여 index를 키로 하여 genre를 반환
