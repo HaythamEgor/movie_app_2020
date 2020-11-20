@@ -5,9 +5,9 @@ function About() {
     return (
         <div className="about_container">
             <span>
-                "Freedom is the freedom to say that two plus two make four. If that is granted, all else follows."
+                "집에가고 싶어요"
             </span>
-            <span>- George Orwell, 1984</span>
+            <span>- 금요일 오후 수업</span>
         </div>
     );
 }
