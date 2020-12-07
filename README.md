@@ -3,6 +3,22 @@
 ## movie_app_2020
 React JS Fundamentals Course 2020
 
+## 12월 1일
+1. 외부 마크다운 라이브러리인 remarkable을 사용해 태그 안의 값을 실시간으로 변환할 수 있음
+2. handleChange = input 태그의 값을 변경할 때마다 발생하는 이벤트 처리
+   handleSubmit = form에서 제출할 때 발생하는 이벤트 처리
+
+## 11월 27일
+1. React와 ReactDOM 모두 CDN을 통해 사용할 수 있음
+2. CDN을 통해 React를 사용한다면, crossorigin 어트리뷰트(attribute)와 함께 사용하는 것을 권장
+
+## 11월 20일
+1. pathname은 URL을 의미하며, state는 우리가 route props에 보내줄 데이터를 뜻 함
+2. Redirect기능을 사용하기 위해서는 router props의 history 키를 활용해야 함
+3. location.state가 undefined인 경우 push() 함수를 사용
+    └ex) history.push("/")
+4. location.state가 없으면 render() 함수가 null을 반환하도록 수정
+
 ## 11월 13일
 1. slice함수를 이용하여 글자수 제한
     └ex) .slice(0, 180)
